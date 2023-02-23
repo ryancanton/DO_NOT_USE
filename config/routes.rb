@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get "/discover", to: 'discover#index'
+  resources :discover, only: :index
 end
