@@ -4,4 +4,7 @@ class DiscoverController < ApplicationController
       @results = DiscoverRecipesFacade.get_results(params[:search])
     end
   end
+  def show
+    @recipe = RecipeResultsFacade.get_recipe(params[:id])
+  end
 end

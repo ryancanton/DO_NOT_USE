@@ -38,6 +38,7 @@ RSpec.describe "Recipe Search" do
       expect(page).to have_content("2 missing ingredients:")
       expect(page).to have_content("12.0 oz blackberries")
       expect(page).to have_content("0.5 cup butter")
+      
     end
   end
 end
